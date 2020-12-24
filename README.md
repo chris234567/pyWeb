@@ -1,2 +1,2 @@
 # pyWeb
-.. a personal website written in python using the Django WebAPI
+.. a personal website written in python using the Django Web framework
