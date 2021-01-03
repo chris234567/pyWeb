@@ -1,6 +1,57 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-{% block page_content %}{% endblock %}
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+<text>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="nav-link" href="{% url 'home' %}">
+            <span class="navbar-text" style="font-size: 200%; color:grey;">
+                <b>👨🏻‍💻 Christoph Stade</b>
+            </span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+
+            <li class="p-3">
+              <a class="nav-link" href="{% url 'project_index' %}">
+                  <span class="navbar-text" style="font-size: 144%; color:grey">
+                      <b>
+                          Projects
+                      </b>
+                  </span>
+              </a>
+            </li>
+            <!--<li class="nav-item">
+              <a class="nav-link" href="{% url 'blog_index' %}">Blog</a>    # not used atm
+            </li>-->
+
+            <li class="py-3">
+
+              <a class="nav-link" href="{% url 'About' %}">
+                  <span class="navbar-text" style="font-size: 144%; color:deeppink">
+                      <b class="highlight-link">
+                          About
+                      </b>
+                  </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+</nav>
+</text>
+
+<div class="container">
+    {% block page_content %}{% endblock %}
+</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

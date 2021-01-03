@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+STATICFILES_DIRS = [
+    "C:/Users/Chris/PycharmProjects/pyWeb/personal_portfolio/static"
+]
 
 # Application definition
 
@@ -37,7 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'home',
     'projects',
+    'blog',
+    'About',
 ]
 
 MIDDLEWARE = [
