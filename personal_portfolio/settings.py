@@ -29,6 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'christoph-stade-pyweb.herokuapp.com',
+    'www.christoph-stade.info',
 ]
 
 #STATICFILES_DIRS = [
