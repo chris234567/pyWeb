@@ -28,7 +28,8 @@ SECRET_KEY = TOKEN
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'christoph-stade-pyweb.herokuapp.com'
+    'www.christoph-stade.info'
+    'www.christoph-stade-pyweb.herokuapp.com'
 ]
 
 #STATICFILES_DIRS = [
