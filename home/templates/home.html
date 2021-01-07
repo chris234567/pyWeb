@@ -7,6 +7,9 @@
 <style>
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700|Source+Sans+Pro:300,400|Dosis:300,400,700");
 text {
+  position: relative;
+  top: 20px;
+  left: 80px;
   max-width: 900px;
   margin: 0px;
   padding: 0px;
@@ -40,8 +43,13 @@ article .highlight-link:hover {
 </style>
 
 <article>
-  <h1><strong>Hallo!</strong> 👋</h1>
-  <h1>Ich bin <strong>Christoph Stade,</strong>
+    <text>
+  <h1><span style="font-weight: bolder">Hallo!</span> 👋</h1>
+  <h1>
+      Ich bin
+      <span style="font-weight: bolder">
+          Christoph Stade,
+      </span>
       Medieninformatik Student an der
       <a class="highlight-link" href="https://www.th-nuernberg.de/" target="_blank">
           TH Nuernberg
@@ -49,11 +57,15 @@ article .highlight-link:hover {
   </h1>
 
   <br>
-  <p><b style="font-size: 200%; color:#007fff">GitHub</b></p>
+  <p>
+      <span style="font-weight: bolder; font-size: 200%; color:#007fff">
+          GitHub
+      </span>
+  </p>
 
 <div class="github-card" data-github="chris234567" data-width="270" data-height="150" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-
+</text>
 </article>
 
 {% endblock %}

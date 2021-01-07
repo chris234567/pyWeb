@@ -7,6 +7,9 @@
 <style>
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700|Source+Sans+Pro:300,400|Dosis:300,400,700");
 text {
+  position: relative;
+  top: 20px;
+  left: 80px;
   max-width: 900px;
   margin: 0px;
   padding: 0px;
@@ -39,23 +42,21 @@ article .highlight-link:hover {
 }
 </style>
 
+<text>
 <article>
   <h1 style="color:deeppink;">
-      <strong>About</strong>
+      <span style="font-weight: bolder">About</span>
   </h1>
 
 <div>
     <h2>Zu Mir</h2>
-    <p style="font-size: 110%">
+    <p style="font-kerning: none; font-size: 110%">
         Hi, Ich bin Christoph und studiere an der TH Nuernberg Medieninformatik.
-    </p>
-    <p style="font-size: 110%">
+    <br>
         Ich spiele Geige und mache gerne Sport, unter anderem Radfahren.
-    </p>
-    <p style="font-size: 110%">
+    <br>
         Neben der Uni macht es mir riesen Spass an Projekten, wie z.b. dieser Website, zu arbeiten.
-    </p>
-    <p style="font-size: 110%">
+    <br>
         Wenn dich meine Projekete interessieren kannst du dich gerne mal auf meiner GitHub Page umschauen:)
     </p>
 </div>
@@ -63,12 +64,21 @@ article .highlight-link:hover {
 <div>
     <h4>Kontakt</h4>
     <p style="font-size: 110%">
-        E-mail: christoph-stade@outlook.de
+        <a style="text-decoration:none; color:deepskyblue" href="mailto:christoph-stade@outlook.de">
+            <b>
+            E-mail: christoph-stade@outlook.de
+            </b>
+        </a>
         <br>
-        LinkedIn: https://www.linkedin.com/in/christoph-stade-a267151b7
+        <a style="text-decoration:none; color:deepskyblue" href="https://www.linkedin.com/in/christoph-stade-a267151b7/">
+            <b>
+            LinkedIn: https://www.linkedin.com/in/christoph-stade-a267151b7
+            </b>
+        </a>
     </p>
 </div>
 
 </article>
+</text>
 
 {% endblock %}

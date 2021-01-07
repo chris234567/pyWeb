@@ -2,9 +2,14 @@
 {% load static %}
 {% block page_content %}
 
+<!--css styling is not external because import doesnt work somehow-->
+
 <style>
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700|Source+Sans+Pro:300,400|Dosis:300,400,700");
 text {
+  position: relative;
+  top: 20px;
+  left: 80px;
   max-width: 900px;
   margin: 0px;
   padding: 0px;
@@ -37,6 +42,16 @@ article .highlight-link:hover {
 }
 </style>
 
+
+<article>
+    <text>
+        <h1 style="font-weight: bolder">
+            Coming soon!
+        </h1>
+    </text>
+</article>
+<!-- old bootstrap code - isnt working anymore
+
 <h1>Projects</h1>
 <div class="row">
 {% for project in projects %}
@@ -55,4 +70,6 @@ article .highlight-link:hover {
     </div>
     {% endfor %}
 </div>
+-->
 {% endblock %}
+
