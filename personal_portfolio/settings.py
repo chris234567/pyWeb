@@ -5,7 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 TOKEN = os.getenv("SECRET_TOKEN")
 SECRET_KEY = TOKEN
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     '.christoph-stade-pyweb.herokuapp.com',
@@ -99,7 +99,7 @@ STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
 )
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 
 import dj_database_url
 prod_db  =  dj_database_url.config(conn_max_age=500)
