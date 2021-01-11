@@ -5,7 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 TOKEN = os.getenv("SECRET_TOKEN")
 SECRET_KEY = TOKEN
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'christoph-stade-pyweb.herokuapp.com',
