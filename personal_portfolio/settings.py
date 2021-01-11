@@ -8,9 +8,10 @@ SECRET_KEY = TOKEN
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    '.christoph-stade-pyweb.herokuapp.com',
-    '.christoph-stade.info',
-    '127.0.0.1', # for local development
+    '*',
+    #'christoph-stade-pyweb.herokuapp.com',
+    #'christoph-stade.info',
+    #'127.0.0.1', # for local development
 ]
 
 INSTALLED_APPS = [
